@@ -27,8 +27,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Run tests with coverage
         run: npm test -- --watch=false --browsers=ChromeHeadless --code-coverage
